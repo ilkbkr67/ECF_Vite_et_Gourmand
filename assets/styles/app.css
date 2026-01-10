@@ -6,6 +6,8 @@
     --background: #E5DCCF;
     --text: #2F2F2F;
     --success: #6EA67C;
+    --bs-primary: #1F2A44;
+    --bs-secondary: #D9A441;
 }
 
 /* Fond */
@@ -17,21 +19,28 @@ body {
 }
 
 /* Police d'écriture */
-
-header,
-h1,
-h2,
-h3,
-h4 {
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: var(--bs-primary);
+}
+header {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
+    color: var(--bs-primary);
 }
 
 /* Boutons */
 
 .btn-primary {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     border: none;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+    color: #fff;
 }
 
 .btn-secondary {
@@ -53,4 +62,9 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+
+.background2 {
+    background-color: #2F2F2F;
 }

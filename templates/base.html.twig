@@ -6,7 +6,6 @@
 
     <title>{% block title %}Vite & Gourmand{% endblock %}</title>
 
-    {# ✅ AssetMapper : CSS + JS #}
     {% block stylesheets %}
         {{ importmap('app') }}
     {% endblock %}
@@ -43,7 +42,7 @@
     {% block body %}{% endblock %}
 </main>
 
-<footer class="text-center py-4" style="background-color: var(--primary); color: white;">
+<footer class="background2 text-center py-4" style="color: white;">
     <div class="row">
         <div class="col-lg-2">
             <p>Nos horaires<br>Du lundi au dimanche</p>
