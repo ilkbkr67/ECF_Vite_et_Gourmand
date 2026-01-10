@@ -15,4 +15,6 @@ Verifier avec la commande si tout est ok
 
 Une fois les prérequis installé lancé la commande
 
-    - symfony new my_project_directory --version="8.0.x" --webapp"
+    - symfony new my_project_directory --version="7.4.x" --webapp"
+
+Nota : Dans la version 8.0 de symfony le webbpack encore n'est pas fonctionnelle. 
