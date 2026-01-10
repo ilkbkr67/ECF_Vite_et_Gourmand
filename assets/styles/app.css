@@ -1,3 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary: #1F2A44;
+    --secondary: #D9A441;
+    --background: #E5DCCF;
+    --text: #2F2F2F;
+    --success: #6EA67C;
+}
+
+/* Fond */
+
 body {
-    background-color: skyblue;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Police d'écriture */
+
+header,
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+/* Boutons */
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: #000;
+    border: none;
+}
+
+.btn-success {
+    background-color: var(--success);
+    border: none;
+}
+
+/*Liens*/
+
+a {
+    color: var(--secondary);
+}
+
+a:hover {
+    text-decoration: underline;
 }
