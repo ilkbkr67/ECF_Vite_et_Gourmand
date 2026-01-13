@@ -68,3 +68,14 @@ a:hover {
 .background2 {
     background-color: #2F2F2F;
 }
+
+.badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: D9D9D9;
+    color: #000000;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #d6c7aa;
+}
