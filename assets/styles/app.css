@@ -16,6 +16,7 @@ body {
     background-color: var(--background);
     color: var(--text);
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 /* Police d'écriture */
@@ -87,4 +88,29 @@ a:hover {
     font-size: 14px;
     font-weight: 500;
     border: 1px solid #d6c7aa;
+}
+
+.image-card{
+    position:relative;
+    &:hover{
+        .titre-image{
+            opacity: 1;
+        }
+        img{
+            filter: brightness(0.3);
+        }
+    }
+
+    img{
+        transition: all 0.3s;
+    }
+
+    .titre-image{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.3s;
+    }
 }

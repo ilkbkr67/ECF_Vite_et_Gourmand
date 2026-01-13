@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos de nous{% endblock %}
+
+{% block body %}
+
+<div class="container p-4">
+    <h1 class="text-center pb-5">A propos de nous</h1>
+</div>
+
+<div class="container p-4">
+    <p>
+        Bienvenue chez Vite & Gourmand, votre destination incontournable pour une expérience culinaire rapide et délicieuse. Fondé en 2020, notre restaurant s'engage à offrir des plats savoureux préparés avec des ingrédients frais et de qualité.
+    </p>
+    <p>
+        Notre équipe passionnée de chefs talentueux travaille sans relâche pour créer un menu varié qui répond aux goûts et aux préférences de tous nos clients. Que vous soyez végétarien, amateur de viande ou adepte de plats sans gluten, nous avons quelque chose pour vous.
+    </p>
+    <p>
+        Chez Vite & Gourmand, nous croyons que manger rapidement ne signifie pas sacrifier la qualité. Nous nous efforçons de fournir un service rapide tout en maintenant des normes élevées en matière de goût et de présentation.
+    </p>
+    <p>
+        Nous sommes impatients de vous accueillir dans notre restaurant et de vous faire découvrir notre passion pour la cuisine rapide et gourmande. Merci de faire partie de notre aventure culinaire !
+    </p>
+
+<div class="row row-cols-2 row-cols-lg-3">
+    <div class="col p-3">
+        <div class="image-card text-white">
+            <img src="{{ asset('images/strawberries-4198762_640.jpg') }}" class="rounded w-100"/>
+            <p class="titre-image">Titre</p>
+        </div>
+    </div>
+    <div class="col p-3">
+        <div class="image-card text-white">
+            <img src="{{ asset('images/strawberries-4198762_640.jpg') }}" class="rounded w-100"/>
+            <p class="titre-image">Titre</p>
+        </div>
+    </div>
+    <div class="col p-3">
+        <div class="image-card text-white">
+            <img src="{{ asset('images/strawberries-4198762_640.jpg') }}" class="rounded w-100"/>
+            <p class="titre-image">Titre</p>
+        </div>
+    </div>   
+</div>
+
+<div class="text-center pb-4">
+    <a href="{{ path('app_menus') }}" class="btn btn-primary">Voir la galerie</a>
+</div>
+{% endblock %}
